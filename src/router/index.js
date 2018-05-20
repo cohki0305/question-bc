@@ -5,6 +5,7 @@ import Questions from '@/components/Questions'
 Vue.use(Router)
 
 export default new Router({
+  mode: 'history',
   routes: [
     {
       path: '/',

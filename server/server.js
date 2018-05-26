@@ -1,6 +1,7 @@
 require('./config/config')
 const express = require('express')
 const questions = require('./controllers/questions')
+const users = require('./controllers/users')
 const bodyParser = require('body-parser')
 
 const app = express()
@@ -13,6 +14,7 @@ app.use(function (req, res, next) {
 })
 
 app.use('/questions', questions)
+app.use('/users', users)
 
 const port = process.env.PORT
 
